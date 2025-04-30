@@ -1,0 +1,363 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0 ;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:  'inter', sans-serif ;
+}
+
+:root{
+    /*neutral colors*/
+    --black:#26323b;
+    --D_grey: #4d4d4d;
+    --grey:#717171;
+    --l_grey:#89939e;
+    --grey_blue:#abbed1;
+    --silver:#f5f7fa;
+    --white:#ffffff;
+
+    --primary:#28cb8b;
+    --secondary:#263238;
+    --info:#2194f3;
+
+
+    /*color shade */
+    --shade1:#43a046;
+    --shade2:#388e3b;
+    --shade3:#237d31;
+    --shade4:#1b5e1f;
+    --shade5:#103e13;
+
+    /*color tint*/
+    --tint1:#66bb69;
+    --tint2:#81c784;
+    --tint3:#a5d6a7;
+    --tint4: #c8e6c9;
+
+    /*Action */
+    --warning:#fbc02d;
+    --error:#E53835;
+    --success: #2e7d31;
+
+    /*shadow*/
+    --shadow-2px: 0px 2px 4px rgba(171, 190, 209, 0.6);
+    --shadow_4px: 4px #abbed1 40%;
+    --shadow_6px: 6px #abbed1 30%;  
+    --shadow_8px: 8px #abbed1 40%; 
+    --shadow_2px: 16px #abbed1 30%; 
+}
+
+body{
+    
+    background: var(--silver);
+    
+}
+.container{
+    margin: 0 144px;
+}
+nav{ 
+    margin: 0 144px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 24px;
+   gap: 50px;
+   height: 84px;
+   background: var(--silver);
+   
+}
+nav .links ul {
+    display: flex;
+    gap: 60px;
+}
+nav .link ul li{
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+
+nav .logSignup a{
+    margin: 0 10px;
+}
+
+nav .logSignup .login{
+    color: var(--primary);
+}
+nav .logSignup .signup{
+    color: var(--white);
+    background-color: var(--primary);
+    height: 40px;
+    width: 90px;
+    padding: 10px;
+    border: none;
+    outline: 0;
+    border-radius: 6px;
+  
+}
+nav .logSignup .signup a{
+    color: var(--white);
+}
+
+/*section 1 home page 1*/
+section{
+    margin-bottom: 40px;
+}
+main .page1 .container
+{
+    
+    margin: 96px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 104px;
+}
+ .left .register{
+    margin-top: 32px;
+ }
+
+
+.page1 .left  h1{
+    margin-bottom: 16px;
+    font-size: 64px;
+    line-height: 76px;
+    color: var(--D_grey);
+    
+}
+.page1 .left  h1 span{
+    color: var(--primary);
+}
+
+.page1 .left  h2{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: var(--grey);
+}
+
+.left .register{
+    font-size: 16px;
+    line-height: 24px;
+    height: 52px;
+    width: 123px;
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+    outline: 0;
+    border-radius: 4px;
+
+}
+.left .register a{
+    color: var(--white);
+}
+
+/* our client section */
+.ourClient{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background: var(--white);
+    min-height: 190px;
+   
+    /*margin: 0 144px;*/
+}
+.ourClient .titletop{
+    margin-top: 40px;
+}
+
+.ourClient .titletop h2{
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--D_grey);
+    margin-top: 16px;
+    font-weight: 600;
+}
+.ourClient .titletop .txt{
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey);
+    font-weight: 400;
+
+}
+.ourClient .iconbottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 16px;
+    height: 98px;
+}
+.ourClient .carddiv{
+    height: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ourClient .carddiv .card{
+    padding: 24px 32px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.ourClient .carddiv .card:hover{
+    background-color: var(--white);
+    box-shadow: var(--shadow-2px);
+    border-radius: 8px;
+}
+.carddiv{
+    margin-bottom: 40px;
+}
+.carddiv .card .cardtop{
+    height: 144px;
+    width: 267px;
+  
+}
+.carddiv .card .cardtop img{
+    margin-bottom: 16px;
+}
+.carddiv .card .cardtop h2{
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--D_grey);
+}
+.carddiv .card .cardbottom{
+    height: 60px;
+    width: 251px;
+    margin-top:8px ;
+
+}
+
+.carddiv .card .cardbottom p{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--grey);
+    text-align: center;
+    
+}
+.pixelgrade{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 42px;
+}
+.pixelgrade .right{
+    text-align: left;
+    width: 661px;
+    height: 268px;
+}
+.pixelgrade .left{
+    height: 433px;
+    width: 442px;
+}
+.pixelgrade .right h1{
+    margin-bottom: 16px;
+    height: 88px;
+    width: 601px;
+    line-height: 44px;
+    font-size: 36px;
+    color: var(--D_grey);
+    font-weight: 600;
+}
+.pixelgrade .right h2{
+    margin-bottom: 32px;
+    height: 80px;
+    width: 601px;
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.pixelgradebtn{
+    width: 151px;
+    height: 52px;
+    border-radius: 4px;
+    background-color: var(--primary);
+    border: 0;
+    outline: 0;
+    
+}
+
+.pixelgradebtn a{
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+    font-weight: 400;
+}
+.community{
+    height: 288px;
+    padding: 64px 0;
+}
+.community .com{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+}
+.community .com .left{
+    width: 540px;
+    height: 120px;
+}
+.community .com .left h2{
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--D_grey);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.community .com .left h2>span{
+    color: var(--primary);
+}
+.community .com .left p{
+    line-height: 24px;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.community .com .right {
+    display: flex;
+    flex-direction: row; /* changed from column */
+    flex-wrap: wrap;      /* ensures it wraps to two rows */
+    gap: 40px;            /* consistent gap between boxes */
+    max-width: 500px;     /* optional, helps prevent overflow */
+}
+.community .com .right .top,
+.community .com .right .bottom {
+    display: contents; /* flatten structure so the boxes flow in one grid */
+}
+.community .com .right .box {
+    width: 200px; /* or whatever width fits your design */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.community .com .right .box h3{
+    line-break: auto;
+}
+.mid {
+    background-color: var(--white);
+    padding: 48px 0;
+}
+.midbtn{
+    width: 151px;
+    height: 52px;
+    border-radius: 4px;
+    background-color: var(--primary);
+    border: 0;
+    outline: 0;
+    margin-top: 32px;
+    
+}
+
+.midbtn a{
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+    font-weight: 400;
+}
